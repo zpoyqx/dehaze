@@ -6,5 +6,7 @@ The Matlab code for this project came from one of my seniors, and I mainly just 
 
 ## Instructions
 Under the Images folder are some fogged photos.
-under the Results file are the results after defogging.
+
+Under the Results file are the results after defogging.
+
 Note that the path inside the code needs to be modified by yourself！
