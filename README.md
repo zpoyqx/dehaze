@@ -9,4 +9,6 @@ Under the Images folder are some fogged photos.
 
 Under the Results file are the results after defogging.
 
+In the Python folder, there is a code based on dark channel dehaze.
+
 Note that the path inside the code needs to be modified by yourself！
