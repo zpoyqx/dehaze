@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_axi_dma_0/sim/DoubleDMA_axi_dma_0.vhd" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_rst_ps7_0_100M_0/sim/DoubleDMA_rst_ps7_0_100M_0.vhd" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_axi_dma_0_0/sim/DoubleDMA_axi_dma_0_0.vhd" \
+
+nosort

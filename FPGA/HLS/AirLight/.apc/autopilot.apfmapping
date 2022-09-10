@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="AirLight.cpp" path="E:\Vivado\Project_Vitis_HLS\AirLight\source\AirLight.cpp"/>
+    <originFiles name="AirLight.h" path="E:\Vivado\Project_Vitis_HLS\AirLight\source\AirLight.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

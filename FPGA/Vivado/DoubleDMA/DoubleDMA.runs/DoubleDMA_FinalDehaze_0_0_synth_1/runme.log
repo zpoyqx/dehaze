@@ -1,0 +1,439 @@
+
+*** Running vivado
+    with args -log DoubleDMA_FinalDehaze_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DoubleDMA_FinalDehaze_0_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source DoubleDMA_FinalDehaze_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1107.016 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Vivado/Project_Vivado/ip_repo/AirLight'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Vivado/Project_Vivado/ip_repo/FinalDehaze'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2020.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1107.016 ; gain = 0.000
+Command: synth_design -top DoubleDMA_FinalDehaze_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18524
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1177.918 ; gain = 70.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DoubleDMA_FinalDehaze_0_0' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_FinalDehaze_0_0/synth/DoubleDMA_FinalDehaze_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 11'b00000000001 
+	Parameter ap_ST_fsm_state2 bound to: 11'b00000000010 
+	Parameter ap_ST_fsm_state3 bound to: 11'b00000000100 
+	Parameter ap_ST_fsm_state4 bound to: 11'b00000001000 
+	Parameter ap_ST_fsm_state5 bound to: 11'b00000010000 
+	Parameter ap_ST_fsm_state6 bound to: 11'b00000100000 
+	Parameter ap_ST_fsm_state7 bound to: 11'b00001000000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 11'b00010000000 
+	Parameter ap_ST_fsm_pp0_stage1 bound to: 11'b00100000000 
+	Parameter ap_ST_fsm_pp0_stage2 bound to: 11'b01000000000 
+	Parameter ap_ST_fsm_state258 bound to: 11'b10000000000 
+	Parameter C_S_AXI_CONTROL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_control_s_axi' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_control_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 4'b0000 
+	Parameter ADDR_GIE bound to: 4'b0100 
+	Parameter ADDR_IER bound to: 4'b1000 
+	Parameter ADDR_ISR bound to: 4'b1100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_control_s_axi.v:185]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_control_s_axi' (1#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_dadddsub_64ns_64ns_64_7_full_dsp_1' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dadddsub_64ns_64ns_64_7_full_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_ap_dadddsub_5_full_dsp_64' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dadddsub_5_full_dsp_64.v:60]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [E:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39137]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (2#1) [E:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39137]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_ap_dadddsub_5_full_dsp_64' (30#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dadddsub_5_full_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_dadddsub_64ns_64ns_64_7_full_dsp_1' (31#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dadddsub_64ns_64ns_64_7_full_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_dadd_64ns_64ns_64_7_full_dsp_1' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dadd_64ns_64ns_64_7_full_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_ap_dadd_5_full_dsp_64' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dadd_5_full_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_ap_dadd_5_full_dsp_64' (32#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dadd_5_full_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_dadd_64ns_64ns_64_7_full_dsp_1' (33#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dadd_64ns_64ns_64_7_full_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_dmul_64ns_64ns_64_7_max_dsp_1' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dmul_64ns_64ns_64_7_max_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_ap_dmul_5_max_dsp_64' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dmul_5_max_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_ap_dmul_5_max_dsp_64' (40#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dmul_5_max_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_dmul_64ns_64ns_64_7_max_dsp_1' (41#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dmul_64ns_64ns_64_7_max_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_ddiv_64ns_64ns_64_59_no_dsp_1' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_ddiv_64ns_64ns_64_59_no_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 59 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_ap_ddiv_57_no_dsp_64' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_ddiv_57_no_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_ap_ddiv_57_no_dsp_64' (46#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_ddiv_57_no_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_ddiv_64ns_64ns_64_59_no_dsp_1' (47#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_ddiv_64ns_64ns_64_59_no_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_dcmp_64ns_64ns_1_2_no_dsp_1' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dcmp_64ns_64ns_1_2_no_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 1 - type: integer 
+	Parameter AP_OEQ bound to: 5'b00001 
+	Parameter AP_OGT bound to: 5'b00010 
+	Parameter AP_OGE bound to: 5'b00011 
+	Parameter AP_OLT bound to: 5'b00100 
+	Parameter AP_OLE bound to: 5'b00101 
+	Parameter AP_ONE bound to: 5'b00110 
+	Parameter AP_UNO bound to: 5'b01000 
+	Parameter OP_EQ bound to: 8'b00010100 
+	Parameter OP_GT bound to: 8'b00100100 
+	Parameter OP_GE bound to: 8'b00110100 
+	Parameter OP_LT bound to: 8'b00001100 
+	Parameter OP_LE bound to: 8'b00011100 
+	Parameter OP_NE bound to: 8'b00101100 
+	Parameter OP_UO bound to: 8'b00000100 
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_ap_dcmp_0_no_dsp_64' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dcmp_0_no_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_ap_dcmp_0_no_dsp_64' (50#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dcmp_0_no_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_dcmp_64ns_64ns_1_2_no_dsp_1' (51#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dcmp_64ns_64ns_1_2_no_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_uitodp_32ns_64_6_no_dsp_1' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_uitodp_32ns_64_6_no_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_ap_uitodp_4_no_dsp_32' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_uitodp_4_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_ap_uitodp_4_no_dsp_32' (54#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_uitodp_4_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_uitodp_32ns_64_6_no_dsp_1' (55#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_uitodp_32ns_64_6_no_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_sitodp_64s_64_6_no_dsp_1' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_sitodp_64s_64_6_no_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_ap_sitodp_4_no_dsp_64' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_sitodp_4_no_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_ap_sitodp_4_no_dsp_64' (57#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_sitodp_4_no_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_sitodp_64s_64_6_no_dsp_1' (58#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_sitodp_64s_64_6_no_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_sitodp_32s_64_6_no_dsp_1' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_sitodp_32s_64_6_no_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_ap_sitodp_4_no_dsp_32' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_sitodp_4_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_ap_sitodp_4_no_dsp_32' (59#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_sitodp_4_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_sitodp_32s_64_6_no_dsp_1' (60#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_sitodp_32s_64_6_no_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_dexp_64ns_64ns_64_21_full_dsp_1' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dexp_64ns_64ns_64_21_full_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 21 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_ap_dexp_19_full_dsp_64' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dexp_19_full_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_ap_dexp_19_full_dsp_64' (75#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dexp_19_full_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_dexp_64ns_64ns_64_21_full_dsp_1' (76#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dexp_64ns_64ns_64_21_full_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_regslice_both' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_regslice_both.v:8]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_regslice_both' (77#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'FinalDehaze_regslice_both__parameterized0' [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_regslice_both.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze_regslice_both__parameterized0' (77#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'FinalDehaze' (78#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'DoubleDMA_FinalDehaze_0_0' (79#1) [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_FinalDehaze_0_0/synth/DoubleDMA_FinalDehaze_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:54 ; elapsed = 00:03:31 . Memory (MB): peak = 1628.164 ; gain = 521.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:00 ; elapsed = 00:03:39 . Memory (MB): peak = 1628.164 ; gain = 521.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:00 ; elapsed = 00:03:39 . Memory (MB): peak = 1628.164 ; gain = 521.148
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1628.164 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19944 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_FinalDehaze_0_0/constraints/FinalDehaze_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_FinalDehaze_0_0/constraints/FinalDehaze_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_FinalDehaze_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_FinalDehaze_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.218 . Memory (MB): peak = 1799.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 91 instances were transformed.
+  FDE => FDRE: 91 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1843.879 ; gain = 44.082
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:03:48 ; elapsed = 00:05:55 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:48 ; elapsed = 00:05:55 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_FinalDehaze_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:48 ; elapsed = 00:05:55 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'FinalDehaze_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'FinalDehaze_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'FinalDehaze_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'FinalDehaze_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:10 ; elapsed = 00:06:19 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'flt_add_logic:/NORM/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized11) to 'flt_add_logic:/NORM/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'flt_add_logic:/NORM/ROUND/EXP_INC_DELAY' (delay__parameterized11) to 'flt_add_logic:/NORM/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/dadddsub_64ns_64ns_64_7_full_dsp_1_U1/FinalDehaze_ap_dadddsub_5_full_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dadddsub_64ns_64ns_64_7_full_dsp_1_U1/FinalDehaze_ap_dadddsub_5_full_dsp_64_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dadddsub_64ns_64ns_64_7_full_dsp_1_U1/FinalDehaze_ap_dadddsub_5_full_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dadddsub_64ns_64ns_64_7_full_dsp_1_U1/FinalDehaze_ap_dadddsub_5_full_dsp_64_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dadd_64ns_64ns_64_7_full_dsp_1_U2/FinalDehaze_ap_dadd_5_full_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dadd_64ns_64ns_64_7_full_dsp_1_U2/FinalDehaze_ap_dadd_5_full_dsp_64_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dadd_64ns_64ns_64_7_full_dsp_1_U2/FinalDehaze_ap_dadd_5_full_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dadd_64ns_64ns_64_7_full_dsp_1_U2/FinalDehaze_ap_dadd_5_full_dsp_64_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U3/FinalDehaze_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U3/FinalDehaze_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U3/FinalDehaze_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U3/FinalDehaze_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_ddiv_64ns_64ns_64_59_no_dsp_1:/FinalDehaze_ap_ddiv_57_no_dsp_64_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized11) to 'FinalDehaze_ddiv_64ns_64ns_64_59_no_dsp_1:/FinalDehaze_ap_ddiv_57_no_dsp_64_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_ddiv_64ns_64ns_64_59_no_dsp_1:/FinalDehaze_ap_ddiv_57_no_dsp_64_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized11) to 'FinalDehaze_ddiv_64ns_64ns_64_59_no_dsp_1:/FinalDehaze_ap_ddiv_57_no_dsp_64_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_ddiv_64ns_64ns_64_59_no_dsp_1:/FinalDehaze_ap_ddiv_57_no_dsp_64_u/inst/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized11) to 'FinalDehaze_ddiv_64ns_64ns_64_59_no_dsp_1:/FinalDehaze_ap_ddiv_57_no_dsp_64_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_dcmp_64ns_64ns_1_2_no_dsp_1:/FinalDehaze_ap_dcmp_0_no_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'FinalDehaze_dcmp_64ns_64ns_1_2_no_dsp_1:/FinalDehaze_ap_dcmp_0_no_dsp_64_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_dcmp_64ns_64ns_1_2_no_dsp_1:/FinalDehaze_ap_dcmp_0_no_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'FinalDehaze_dcmp_64ns_64ns_1_2_no_dsp_1:/FinalDehaze_ap_dcmp_0_no_dsp_64_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_dcmp_64ns_64ns_1_2_no_dsp_1:/FinalDehaze_ap_dcmp_0_no_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'FinalDehaze_dcmp_64ns_64ns_1_2_no_dsp_1:/FinalDehaze_ap_dcmp_0_no_dsp_64_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_dcmp_64ns_64ns_1_2_no_dsp_1:/FinalDehaze_ap_dcmp_0_no_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'FinalDehaze_dcmp_64ns_64ns_1_2_no_dsp_1:/FinalDehaze_ap_dcmp_0_no_dsp_64_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitodp_32ns_64_6_no_dsp_1_U9/FinalDehaze_ap_uitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized11) to 'inst/uitodp_32ns_64_6_no_dsp_1_U9/FinalDehaze_ap_uitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/uitodp_32ns_64_6_no_dsp_1_U9/FinalDehaze_ap_uitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized11) to 'inst/uitodp_32ns_64_6_no_dsp_1_U9/FinalDehaze_ap_uitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/uitodp_32ns_64_6_no_dsp_1_U9/FinalDehaze_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/uitodp_32ns_64_6_no_dsp_1_U9/FinalDehaze_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/uitodp_32ns_64_6_no_dsp_1_U9/FinalDehaze_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/uitodp_32ns_64_6_no_dsp_1_U9/FinalDehaze_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitodp_32ns_64_6_no_dsp_1_U9/FinalDehaze_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/uitodp_32ns_64_6_no_dsp_1_U9/FinalDehaze_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitodp_32ns_64_6_no_dsp_1_U9/FinalDehaze_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/uitodp_32ns_64_6_no_dsp_1_U9/FinalDehaze_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitodp_32ns_64_6_no_dsp_1_U9/FinalDehaze_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/uitodp_32ns_64_6_no_dsp_1_U9/FinalDehaze_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized11) to 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized11) to 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized53) to 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized53) to 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/sitodp_64s_64_6_no_dsp_1_U10/FinalDehaze_ap_sitodp_4_no_dsp_64_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized11) to 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized11) to 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized53) to 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized53) to 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'FinalDehaze_sitodp_32s_64_6_no_dsp_1:/FinalDehaze_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dexp_64ns_64ns_64_21_full_dsp_1_U13/FinalDehaze_ap_dexp_19_full_dsp_64_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_sign_delay' (delay__parameterized11) to 'inst/dexp_64ns_64ns_64_21_full_dsp_1_U13/FinalDehaze_ap_dexp_19_full_dsp_64_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_sign_delay'
+INFO: [Synth 8-223] decloning instance 'inst/dexp_64ns_64ns_64_21_full_dsp_1_U13/FinalDehaze_ap_dexp_19_full_dsp_64_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXTRA_LSB_BIT_DEL' (delay__parameterized11) to 'inst/dexp_64ns_64ns_64_21_full_dsp_1_U13/FinalDehaze_ap_dexp_19_full_dsp_64_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/dexp_64ns_64ns_64_21_full_dsp_1_U13/FinalDehaze_ap_dexp_19_full_dsp_64_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/dexp_64ns_64ns_64_21_full_dsp_1_U13/FinalDehaze_ap_dexp_19_full_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/dexp_64ns_64ns_64_21_full_dsp_1_U13/FinalDehaze_ap_dexp_19_full_dsp_64_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/dexp_64ns_64ns_64_21_full_dsp_1_U13/FinalDehaze_ap_dexp_19_full_dsp_64_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dexp_64ns_64ns_64_21_full_dsp_1_U13/FinalDehaze_ap_dexp_19_full_dsp_64_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/dexp_64ns_64ns_64_21_full_dsp_1_U13/FinalDehaze_ap_dexp_19_full_dsp_64_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const1>
+Why this net has no driver: _order_recur <const0>
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:24 ; elapsed = 00:08:37 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:37 ; elapsed = 00:08:51 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:06:49 ; elapsed = 00:09:03 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:07:13 ; elapsed = 00:09:28 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:07:22 ; elapsed = 00:09:37 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:22 ; elapsed = 00:09:37 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:33 ; elapsed = 00:09:48 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:33 ; elapsed = 00:09:49 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:35 ; elapsed = 00:09:50 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:35 ; elapsed = 00:09:51 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   169|
+|2     |DSP48E1 |    43|
+|28    |LUT1    |   297|
+|29    |LUT2    |  3790|
+|30    |LUT3    |  7501|
+|31    |LUT4    |   998|
+|32    |LUT5    |   840|
+|33    |LUT6    |  3057|
+|34    |MUXCY   |  9977|
+|35    |MUXF7   |   462|
+|36    |MUXF8   |     9|
+|37    |SRL16E  |   352|
+|38    |SRLC32E |   429|
+|39    |XORCY   |  9604|
+|40    |FDE     |    91|
+|41    |FDRE    | 22791|
+|42    |FDSE    |    56|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:36 ; elapsed = 00:09:51 . Memory (MB): peak = 1843.879 ; gain = 736.863
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:02 ; elapsed = 00:07:55 . Memory (MB): peak = 1843.879 ; gain = 521.148
+Synthesis Optimization Complete : Time (s): cpu = 00:07:36 ; elapsed = 00:09:51 . Memory (MB): peak = 1843.879 ; gain = 736.863
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1843.879 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20355 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2002.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2736 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 2645 instances
+  FDE => FDRE: 91 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+119 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:08:21 ; elapsed = 00:11:02 . Memory (MB): peak = 2002.199 ; gain = 895.184
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_FinalDehaze_0_0_synth_1/DoubleDMA_FinalDehaze_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 2002.199 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2002.199 ; gain = 0.000
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP DoubleDMA_FinalDehaze_0_0, cache-ID = 5ad918ba20c32e78
+INFO: [Coretcl 2-1174] Renamed 1967 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_FinalDehaze_0_0_synth_1/DoubleDMA_FinalDehaze_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2002.199 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file DoubleDMA_FinalDehaze_0_0_utilization_synth.rpt -pb DoubleDMA_FinalDehaze_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2002.199 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  5 17:04:06 2022...

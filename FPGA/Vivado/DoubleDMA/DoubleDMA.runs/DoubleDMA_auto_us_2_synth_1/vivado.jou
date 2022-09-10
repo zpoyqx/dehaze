@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep  5 16:57:11 2022
+# Process ID: 2868
+# Current directory: E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_auto_us_2_synth_1
+# Command line: vivado.exe -log DoubleDMA_auto_us_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DoubleDMA_auto_us_2.tcl
+# Log file: E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_auto_us_2_synth_1/DoubleDMA_auto_us_2.vds
+# Journal file: E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_auto_us_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DoubleDMA_auto_us_2.tcl -notrace

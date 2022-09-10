@@ -1,0 +1,47 @@
+verilog xil_defaultlib --include "E:/Vivado/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/ec67/hdl" --include "../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/34f8/hdl" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_processing_system7_0_0/sim/DoubleDMA_processing_system7_0_0.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/26e4/hdl/verilog/AirLight_control_s_axi.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/26e4/hdl/verilog/AirLight_dictB.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/26e4/hdl/verilog/AirLight_dmul_64ns_64ns_64_7_max_dsp_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/26e4/hdl/verilog/AirLight_mul_32s_32s_32_2_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/26e4/hdl/verilog/AirLight_regslice_both.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/26e4/hdl/verilog/AirLight_sdiv_32ns_32ns_32_36_seq_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/26e4/hdl/verilog/AirLight_sitodp_32ns_64_6_no_dsp_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/26e4/hdl/verilog/AirLight.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/26e4/hdl/ip/AirLight_ap_dmul_5_max_dsp_64.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/26e4/hdl/ip/AirLight_ap_sitodp_4_no_dsp_32.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_AirLight_0_0/sim/DoubleDMA_AirLight_0_0.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_control_s_axi.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dadd_64ns_64ns_64_7_full_dsp_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dadddsub_64ns_64ns_64_7_full_dsp_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dcmp_64ns_64ns_1_2_no_dsp_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_ddiv_64ns_64ns_64_59_no_dsp_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dexp_64ns_64ns_64_21_full_dsp_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_dmul_64ns_64ns_64_7_max_dsp_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_regslice_both.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_sitodp_32s_64_6_no_dsp_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_sitodp_64s_64_6_no_dsp_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze_uitodp_32ns_64_6_no_dsp_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/verilog/FinalDehaze.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dadddsub_5_full_dsp_64.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dadd_5_full_dsp_64.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dcmp_0_no_dsp_64.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_ddiv_57_no_dsp_64.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dexp_19_full_dsp_64.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_dmul_5_max_dsp_64.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_sitodp_4_no_dsp_32.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_sitodp_4_no_dsp_64.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ipshared/05a7/hdl/ip/FinalDehaze_ap_uitodp_4_no_dsp_32.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_FinalDehaze_0_0/sim/DoubleDMA_FinalDehaze_0_0.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_xbar_0/sim/DoubleDMA_xbar_0.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_auto_us_0/sim/DoubleDMA_auto_us_0.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_auto_us_1/sim/DoubleDMA_auto_us_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_auto_us_2/sim/DoubleDMA_auto_us_2.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_auto_pc_0/sim/DoubleDMA_auto_pc_0.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_xbar_1/sim/DoubleDMA_xbar_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/ip/DoubleDMA_auto_pc_1/sim/DoubleDMA_auto_pc_1.v" \
+"../../../../DoubleDMA.gen/sources_1/bd/DoubleDMA/sim/DoubleDMA.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

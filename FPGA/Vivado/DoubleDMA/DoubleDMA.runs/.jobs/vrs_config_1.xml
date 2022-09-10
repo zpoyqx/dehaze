@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="DoubleDMA_processing_system7_0_0_synth_1" LaunchDir="E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DoubleDMA_AirLight_0_0_synth_1" LaunchDir="E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_AirLight_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DoubleDMA_FinalDehaze_0_0_synth_1" LaunchDir="E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_FinalDehaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DoubleDMA_axi_dma_0_synth_1" LaunchDir="E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_axi_dma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DoubleDMA_xbar_0_synth_1" LaunchDir="E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DoubleDMA_auto_us_0_synth_1" LaunchDir="E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DoubleDMA_auto_us_1_synth_1" LaunchDir="E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_auto_us_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DoubleDMA_auto_us_2_synth_1" LaunchDir="E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_auto_us_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="DoubleDMA_auto_us_1_synth_1"/>
+	</Run>
+	<Run Id="DoubleDMA_auto_pc_0_synth_1" LaunchDir="E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DoubleDMA_rst_ps7_0_100M_0_synth_1" LaunchDir="E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DoubleDMA_axi_dma_0_0_synth_1" LaunchDir="E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_axi_dma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DoubleDMA_xbar_1_synth_1" LaunchDir="E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DoubleDMA_auto_pc_1_synth_1" LaunchDir="E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

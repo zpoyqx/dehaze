@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep  5 16:57:11 2022
+# Process ID: 2868
+# Current directory: E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_auto_us_2_synth_1
+# Command line: vivado.exe -log DoubleDMA_auto_us_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DoubleDMA_auto_us_2.tcl
+# Log file: E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_auto_us_2_synth_1/DoubleDMA_auto_us_2.vds
+# Journal file: E:/Vivado/Project_Vivado/DoubleDMA/DoubleDMA.runs/DoubleDMA_auto_us_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DoubleDMA_auto_us_2.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1103.090 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Vivado/Project_Vivado/ip_repo/AirLight'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Vivado/Project_Vivado/ip_repo/FinalDehaze'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2020.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1103.090 ; gain = 0.000
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP DoubleDMA_auto_us_2, cache-ID = 353e59eaa5921121.
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  5 16:58:05 2022...

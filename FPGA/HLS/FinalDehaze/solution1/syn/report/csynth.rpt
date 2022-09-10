@@ -1,0 +1,25 @@
+
+
+================================================================
+== Synthesis Summary Report of 'FinalDehaze'
+================================================================
++ General Information: 
+    * Date:           Mon Sep  5 16:40:39 2022
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+    * Project:        FinalDehaze
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+------+-------+---------+--------+----------+---------+------+----------+------+----------+-----------+-------------+-----+
+    |       Modules      | Issue|       | Latency | Latency| Iteration|         | Trip |          |      |          |           |             |     |
+    |       & Loops      | Type | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |     FF    |     LUT     | URAM|
+    +--------------------+------+-------+---------+--------+----------+---------+------+----------+------+----------+-----------+-------------+-----+
+    |+ FinalDehaze       |     -|  -0.00|        -|       -|         -|        -|     -|        no|     -|  43 (19%)|  6911 (6%)|  10960 (20%)|    -|
+    | o VITIS_LOOP_14_1  |     -|  -7.30|        -|       -|       250|        3|     -|       yes|     -|         -|          -|            -|    -|
+    +--------------------+------+-------+---------+--------+----------+---------+------+----------+------+----------+-----------+-------------+-----+
+
